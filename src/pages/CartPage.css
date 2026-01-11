@@ -1,0 +1,239 @@
+.cart-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.cart-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #282c34;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.empty-cart h2 {
+    font-size: 2rem;
+    color: #282c34;
+    margin-bottom: 10px;
+}
+
+.empty-cart p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.continue-shopping-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.continue-shopping-button:hover {
+    background-color: #0056b3;
+}
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+}
+
+.cart-items {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #282c34;
+}
+
+.cart-table th {
+    background-color: #282c34;
+    color: white;
+    font-weight: 600;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+.qty-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.qty-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.qty-btn:active {
+    transform: scale(0.95);
+}
+
+.qty-input {
+    width: 50px;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.remove-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+}
+
+.summary-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #282c34;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.summary-row.total {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #282c34;
+    margin-top: 12px;
+}
+
+.summary-divider {
+    border-top: 2px solid #e0e0e0;
+    margin: 15px 0;
+}
+
+.checkout-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
+
+.continue-button {
+    background-color: #f0f0f0;
+    color: #282c34;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.continue-button:hover {
+    background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .cart-page {
+        padding: 20px;
+    }
+
+    .cart-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .cart-content {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        position: static;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
