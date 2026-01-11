@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Environment variables - IMPORTANT: Never commit API keys, secrets, or sensitive data
+.env
+.env.local
+.env.*.local
+.env.production.local
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -22,3 +28,39 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# OS files
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# IDE settings
+*.iml
+.gradle
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Cache directories
+.cache
+.parcel-cache
+.next
+out
+
+# Test coverage
+coverage
+*.lcov
+.nyc_output
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Temporary files
+tmp/
+temp/
+
