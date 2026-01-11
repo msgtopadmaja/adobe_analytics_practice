@@ -10,14 +10,12 @@ interface CartItem {
 
 interface CartPageProps {
   items?: CartItem[];
-  onCheckout?: () => void;
   onRemoveItem?: (productId: number) => void;
   onUpdateQuantity?: (productId: number, quantity: number) => void;
 }
 
 function CartPage({
   items = [],
-  onCheckout,
   onRemoveItem,
   onUpdateQuantity,
 }: CartPageProps) {
